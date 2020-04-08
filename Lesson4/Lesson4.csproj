@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7BE6A026-C18E-4F40-A3B2-68E503939673}</ProjectGuid>
+    <ProjectGuid>{E3DDEDBB-0020-4FE7-BE5C-E4C6C5725794}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lesson3</RootNamespace>
-    <AssemblyName>Lesson3</AssemblyName>
+    <RootNamespace>Lesson4</RootNamespace>
+    <AssemblyName>Lesson4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,20 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="WindowCanvas.xaml.cs">
-      <DependentUpon>WindowCanvas.xaml</DependentUpon>
+    <Compile Include="WindowPopup.xaml.cs">
+      <DependentUpon>WindowPopup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowDockPanel.xaml.cs">
-      <DependentUpon>WindowDockPanel.xaml</DependentUpon>
+    <Compile Include="WindowSpellCheck.xaml.cs">
+      <DependentUpon>WindowSpellCheck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowGridSplitter.xaml.cs">
-      <DependentUpon>WindowGridSplitter.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WindowStackPanel.xaml.cs">
-      <DependentUpon>WindowStackPanel.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WindowUniformGrid.xaml.cs">
-      <DependentUpon>WindowUniformGrid.xaml</DependentUpon>
+    <Compile Include="WindowTabControl.xaml.cs">
+      <DependentUpon>WindowTabControl.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -82,23 +76,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="WindowCanvas.xaml">
+    <Page Include="WindowPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowDockPanel.xaml">
+    <Page Include="WindowSpellCheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowGridSplitter.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WindowStackPanel.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WindowUniformGrid.xaml">
+    <Page Include="WindowTabControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
