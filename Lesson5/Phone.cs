@@ -37,7 +37,7 @@ namespace Lesson5
 		private static bool IsInputCorrect(object value)
 		{
 			Debug.WriteLine($"ValidateValueCallback: {value.ToString()}");			
-			return (value is int) && (value as int?).Value >= 0;
+			return (value is int) && (value as int?).Value >= 0 && (value as int?).Value <= 999;
 		}
 
 		private static object CoerceMaximum(DependencyObject dpObj, object value)
